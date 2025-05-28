@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kinkoo Group</title>
+<style>
+  
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #f9f9f9, #e0e0e0);
+}
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 900;
+  color: #0077cc;
+  letter-spacing: 1px;
+}
+
+.logo img {
+  height: 2cm;          /* ukuran logo */
+  margin-right: 1cm;    /* jarak antara gambar dan teks */
+}
+/* Header layout */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #ffffffd6;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* Navigation menu */
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  background: white;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  position: relative;
+  transition: all 0.4s ease;
+  overflow: hidden;
+}
+
+.menu a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  transition: all 0.4s ease;
+  z-index: 0;
+}
+
+.menu a:hover::before {
+  left: 0;
+}
+
+.menu a span {
+  position: relative;
+  z-index: 1;
+}
+
+.menu a:hover {
+  color: white;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+</style>
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">
+  <img src="KINKOO.png" alt="Kinkoo Logo">
+  <span>Kinkoo Group</span>
+</div>
+    <nav class="menu">
+      <a href="Home.html"><span>Home</span></a>
+      <a href="Gallery.html"><span>Gallery</span></a>
+      <a href="#"><span>Contact Me</span></a>
+    </nav>
+  </header>
+
+</body>
+</html>
